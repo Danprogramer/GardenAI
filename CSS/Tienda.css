@@ -1,93 +1,316 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: beige;
+@media (min-width: 576px) and (max-width: 991px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: beige;
+    }
+
+    /* Navbar */
+    header {
+        background-color: #2ecc71; /* Verde */
+        padding: 20px;
+        text-align: center;
+        display: flex; /* Usar display flex para alinear los elementos horizontalmente */
+        align-items: center; /* Alinear verticalmente los elementos al centro */
+        justify-content: space-between; /* Espacio entre los elementos */
+    }
+
+    header img {
+        width: 8%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease; /* Transición de color al pasar el ratón */
+    }
+
+    nav ul li a:hover {
+        color: #27ae60; /* Verde más oscuro al pasar el ratón */
+    }
+
+
+    h1 {
+        text-align: center;
+    }
+
+    .producto {
+        text-align: center;
+        margin: 20px auto;
+        width: 50%;
+    }
+
+    button {
+        background-color: #2ecc71; /* Verde */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #27ae60; /* Verde más oscuro al pasar el ratón */
+    }
+
+    b{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .producto ul li {
+        list-style-type: none;
+    }
+    .producto ul{
+        padding: 0;
+    }
+
+    .producto img {
+        width: 50%;
+        border-radius: 5px;
+    }
+
+    footer {
+        background-color: #2ecc71; /* Verde */
+        padding: 20px;
+        text-align: center;
+        position: fixed; /* Fijar el footer */
+        bottom: 0; /* Colocar el footer al fondo */
+        width: 100%;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        margin-right: 10px;
+    }
+
+    footer a:hover {
+        color: #27ae60;
+    }
 }
 
-/* Navbar */
-header {
-    background-color: #2ecc71; /* Verde */
-    padding: 20px;
-    text-align: center;
-    display: flex; /* Usar display flex para alinear los elementos horizontalmente */
-    align-items: center; /* Alinear verticalmente los elementos al centro */
-    justify-content: space-between; /* Espacio entre los elementos */
-}
+@media (min-width:992px) {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+        }
 
-header img {
-    width: 4%;
-}
+        /* Navbar */
+        header {
+            background-color: #2ecc71; /* Verde */
+            padding: 20px;
+            text-align: center;
+            display: flex; /* Usar display flex para alinear los elementos horizontalmente */
+            align-items: center; /* Alinear verticalmente los elementos al centro */
+            justify-content: space-between; /* Espacio entre los elementos */
+        }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+        header img {
+            width: 9%;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease; /* Transición de color al pasar el ratón */
-}
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-nav ul li a:hover {
-    color: #27ae60; /* Verde más oscuro al pasar el ratón */
-}
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease; /* Transición de color al pasar el ratón */
+        }
+
+        nav ul li a:hover {
+            color: #27ae60; /* Verde más oscuro al pasar el ratón */
+        }
 
 
-h1{
-    text-align: center;
-}
+        h1 {
+            text-align: center;
+        }
 
-.producto {
-    text-align: center;
-    margin: 20px auto;
-    width: 50%;
-}
+        .producto {
+            text-align: center;
+            margin: 20px auto;
+            width: 50%;
+        }
+    .producto ul{
+        padding: 0;
+    }
 
-button {
-    background-color: #2ecc71; /* Verde */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
+        button {
+            background-color: #2ecc71; /* Verde */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
-button:hover {
-    background-color: #27ae60; /* Verde más oscuro al pasar el ratón */
-}
+        button:hover {
+            background-color: #27ae60; /* Verde más oscuro al pasar el ratón */
+        }
 
-.producto ul li{
-    list-style-type: none;
-}
+    b{
+        display: block;
+        margin-top: 20px;
+    }
 
-.producto img{
-    width: 40%;
-    border-radius: 5px;
-}
+        .producto ul li {
+            list-style-type: none;
+        }
 
-footer {
-    background-color: #2ecc71; /* Verde */
-    padding: 20px;
-    text-align: center;
-    position: fixed; /* Fijar el footer */
-    bottom: 0; /* Colocar el footer al fondo */
-    width: 100%;
-}
+        .producto img {
+            width: 40%;
+            border-radius: 5px;
+        }
 
-footer a {
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
-}
-footer a:hover {
-    color: #27ae60;
+        footer {
+            background-color: #2ecc71; /* Verde */
+            padding: 20px;
+            text-align: center;
+            position: fixed; /* Fijar el footer */
+            bottom: 0; /* Colocar el footer al fondo */
+            width: 100%;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+        }
+
+        footer a:hover {
+            color: #27ae60;
+        }
+    }
+
+@media (max-width:575px) {
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: beige;
+    }
+
+    /* Navbar */
+    header {
+        background-color: #2ecc71; /* Verde */
+        padding: 20px;
+        text-align: center;
+        display: flex; /* Usar display flex para alinear los elementos horizontalmente */
+        align-items: center; /* Alinear verticalmente los elementos al centro */
+        justify-content: space-between; /* Espacio entre los elementos */
+    }
+
+    header img {
+        width: 8%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease; /* Transición de color al pasar el ratón */
+    }
+
+    nav ul li a:hover {
+        color: #27ae60; /* Verde más oscuro al pasar el ratón */
+    }
+
+
+    h1 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .producto {
+        text-align: center;
+        margin: 20px auto;
+        width: 50%;
+    }
+
+    button {
+        background-color: #2ecc71; /* Verde */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #27ae60; /* Verde más oscuro al pasar el ratón */
+    }
+
+    b{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .producto ul li {
+        list-style-type: none;
+    }
+    .producto ul{
+        padding: 0;
+    }
+
+    .producto img {
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    footer {
+        background-color: #2ecc71; /* Verde */
+        padding: 20px;
+        text-align: center;
+        position: fixed; /* Fijar el footer */
+        bottom: 0; /* Colocar el footer al fondo */
+        width: 100%;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        margin-right: 10px;
+    }
+
+    footer a:hover {
+        color: #27ae60;
+    }
 }

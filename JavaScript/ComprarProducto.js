@@ -11,9 +11,32 @@ comprarBtn.addEventListener('click', function() {
 function mostrarModal() {
     // Pedir al usuario que introduzca los datos
     const titular = prompt("Introduce el Titular de la Tarjeta:");
+
+    // Verificar si se canceló la solicitud de titular
+    if (titular === null) {
+        return; // Salir de la función si se cancela
+    }
+
     const numero = prompt("Introduce el Número de la Tarjeta:");
+
+    // Verificar si se canceló la solicitud de número
+    if (numero === null) {
+        return; // Salir de la función si se cancela
+    }
+
     const caducidad = prompt("Introduce la Fecha de Caducidad:");
+
+    // Verificar si se canceló la solicitud de fecha de caducidad
+    if (caducidad === null) {
+        return; // Salir de la función si se cancela
+    }
+
     const codigo = prompt("Introduce el Código:");
+
+    // Verificar si se canceló la solicitud de código
+    if (codigo === null) {
+        return; // Salir de la función si se cancela
+    }
 
     // Mostrar los datos en la consola (puedes enviarlos a un servidor o realizar otras acciones)
     console.log("Titular de la Tarjeta:", titular);

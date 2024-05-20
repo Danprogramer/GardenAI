@@ -38,6 +38,7 @@ function mostrarModal() {
         return; // Salir de la función si se cancela
     }
 
+
     // Mostrar los datos en la consola (puedes enviarlos a un servidor o realizar otras acciones)
     console.log("Titular de la Tarjeta:", titular);
     console.log("Número de la Tarjeta:", numero);
